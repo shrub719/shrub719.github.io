@@ -77,3 +77,14 @@ nav ul {
 #c-contact {
     z-index: 3;
 }
+
+img#pfp {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    border: 3px solid var(--em-1);
+    box-shadow: 0 0.5rem 0 black;
+}
