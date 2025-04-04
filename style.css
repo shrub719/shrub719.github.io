@@ -23,6 +23,12 @@ h2.header {
 p {
     margin: 1rem;
 }
+p a {
+    color: var(--em-2);
+    font-weight: bold;
+    text-decoration: underline 3px;
+    z-index: 999999;
+}
 p em {
     color: var(--em-1);
     font-weight: bold;
@@ -71,16 +77,6 @@ nav ul {
 .link.active {
     background-color: var(--em-2);
     color: var(--bg);
-}
-
-#c-about {
-    z-index: 1;
-}
-#c-projects {
-    z-index: 2;
-}
-#c-contact {
-    z-index: 3;
 }
 
 #pfp {
