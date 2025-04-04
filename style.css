@@ -23,7 +23,7 @@ h2.header {
 p {
     margin: 1rem;
 }
-em {
+p em {
     color: var(--em-1);
     font-weight: bold;
     font-style: normal;
@@ -94,6 +94,10 @@ nav ul {
     box-shadow: 0 0.5rem 0 black;
 }
 
-img.link {
-
+#contacts {
+    margin-top: 3rem;
+}
+.contact-link {
+    width: 60px;
+    margin-right: 0.75rem;
 }
