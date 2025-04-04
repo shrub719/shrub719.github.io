@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Me !</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="main">
+            <nav>
+                <ul id="sidebar">
+                    <li class="link active" onclick="switchSection('about')" id="l-about">About</li>
+                    <li class="link" onclick="switchSection('projects')" id="l-projects">Projects</li>
+                    <li class="link" onclick="switchSection('contact')" id="l-contact">Contact</li>
+                </ul>
+            </nav>
+
+            <div id="content-container">
+                <div class="content active" id="c-about">
+                    <h2>About me</h2>
+                    <p>Hey I just met you and this is crazy but here's my number so call me maybe</p>
+                </div>
+    
+                <div class="content" id="c-projects">
+                    <h2>Projects</h2>
+                </div>
+    
+                <div class="content" id="c-contact">
+                    <h2>Contact me</h2>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
