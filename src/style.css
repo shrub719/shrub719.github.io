@@ -49,13 +49,26 @@ nav ul {
     padding: 2rem;
 }
 .content {
-    display: none;
-    margin-top: 3rem;
+    margin-top: 2rem;
+    opacity: 0;
+    transition: margin-top 0.5s ease, opacity 0.5s ease;
+    position: absolute;
 }
 .content.active {
-    display: block;
+    margin-top: 0;
+    opacity: 1;
 }
 .link.active {
     background-color: var(--em-bg);
     color: var(--bg);
+}
+
+#c-about {
+    z-index: 1;
+}
+#c-projects {
+    z-index: 2;
+}
+#c-contact {
+    z-index: 3;
 }
