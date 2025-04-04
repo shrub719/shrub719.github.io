@@ -19,7 +19,7 @@ p {
     margin: 1rem;
 }
 em {
-    color: var(--em-2);
+    color: var(--em-1);
     font-weight: bold;
     font-style: normal;
 }
