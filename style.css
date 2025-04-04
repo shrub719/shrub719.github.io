@@ -78,6 +78,7 @@ nav ul {
 .content.active {
     margin-top: 0;
     opacity: 1;
+    z-index: 999;
 }
 .link.active {
     background-color: var(--em-2);
