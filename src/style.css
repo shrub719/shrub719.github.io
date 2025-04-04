@@ -2,8 +2,8 @@
     --bg: #1d1c1c;
     --content: #333232;
     --text: #fffaf2;
-    --em: #ffcc7b;
-    --em-bg: #f8b13f;
+    --em-1: #ffcc7b;
+    --em-2: #f8b13f;
 }
 
 body {
@@ -12,11 +12,16 @@ body {
     font: 16px "Courier Prime", monospace;
 }
 h2 {
-    color: var(--em);
+    color: var(--em-1);
     margin-bottom: 2rem;
 }
 p {
     margin: 1rem;
+}
+em {
+    color: var(--em-2);
+    font-weight: bold;
+    font-style: normal;
 }
 
 #main {
@@ -59,7 +64,7 @@ nav ul {
     opacity: 1;
 }
 .link.active {
-    background-color: var(--em-bg);
+    background-color: var(--em-2);
     color: var(--bg);
 }
 
