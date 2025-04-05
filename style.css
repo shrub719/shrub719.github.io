@@ -67,12 +67,15 @@ nav li.active {
 
 /* content */
 #content-container {
+    box-sizing: border-box;
     width: 70%;
     height: 100%;
     margin: 2rem;
     padding: 2rem;
+    position: relative;
 }
 .content {
+    width: 100%;
     margin-top: 2rem;
     margin-right: 5rem;
     opacity: 0;
@@ -95,6 +98,26 @@ nav li.active {
     margin-right: 0.75rem;
 }
 
+/* content - projects */
+#t-projects {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+#t-projects div {
+    padding: 1rem;
+    margin: 1rem;
+    background-color: var(--content);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 0 black;
+}
+#t-projects h3 {
+    color: var(--em-2);
+    margin-top: auto;
+}
+
 /* other */
 #pfp {
     position: absolute;
@@ -105,4 +128,35 @@ nav li.active {
     border-radius: 100%;
     border: 3px solid var(--em-1);
     box-shadow: 0 0.5rem 0 black;
+}
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding-bottom: 1rem;
+    background-color: var(--bg);
+    text-align: center;
+    width: 100%;
+    z-index: 0;
+}
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+    #main {
+        flex-direction: column;
+        margin-top: 0;
+    }
+    nav, #content-container {
+        margin: 0;
+        padding: 0;
+    }
+    .content {
+        margin-right: 0 !important;
+    }
+    #pfp {
+        display: none;
+    }
+    #t-projects div {
+        width: 100%;
+    }
 }
