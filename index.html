@@ -10,22 +10,22 @@
         <div id="main">
             <nav>
                 <ul id="sidebar">
-                    <li class="link active" onclick="switchSection('about')" id="l-about">About</li>
-                    <li class="link" onclick="switchSection('projects')" id="l-projects">Projects</li>
-                    <li class="link" onclick="switchSection('cv')" id="l-cv">CV</li>
-                    <li class="link" onclick="switchSection('contact')" id="l-contact">Contact</li>
+                    <li class="active" onclick="switchSection('about')" id="l-about">About</li>
+                    <li onclick="switchSection('projects')" id="l-projects">Projects</li>
+                    <!-- <li class="link" onclick="switchSection('cv')" id="l-cv">CV</li> -->
+                    <li onclick="switchSection('contact')" id="l-contact">Contact</li>
                 </ul>
             </nav>
 
             <div id="content-container">
                 <div class="content active" id="c-about">
-                    <h2 class="header">About me</h2>
+                    <h2>About me</h2>
                     <p>Hey I just met you and this is crazy but here's my number so call me maybe</p>
                     <p>I am an <em>amazing person</em> who loves <em>being amazing</em>.</p>
                 </div>
     
                 <div class="content" id="c-projects">
-                    <h2 class="header">Projects</h2>
+                    <h2>Projects</h2>
                     <p>I <a href="https://github.com/shrub719">do things</a>!</p>
 
                     <h3>Edu-ECC</h3>
@@ -38,13 +38,13 @@
                     <p>A collection of fun NumWorks scripts to fidget with during class.</p>
                 </div>
 
-                <div class="content" id="c-cv">
-                    <h2 class="header">CV</h2>
+                <!-- <div class="content" id="c-cv">
+                    <h2>CV</h2>
                     <p>I would attach it <a href="https://www.google.com/">here</a> if I had it.</p>
-                </div>
+                </div> -->
     
                 <div class="content" id="c-contact">
-                    <h2 class="header">Contact me</h2>
+                    <h2>Contact me</h2>
                     <p>Don't talk to me please.</p>
                     <div id="contacts">
                         <a href="https://www.linkedin.com/in/andrei-lupsa/"><img src="assets/linkedin.svg" class="contact-link" /></a>
